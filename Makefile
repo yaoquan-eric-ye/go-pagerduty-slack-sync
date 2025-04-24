@@ -13,7 +13,7 @@ test:
 	@go test -v ./...
 
 docker-build:
-	@docker build -t kevholditch/pagerduty-slack-sync:${TAG} -f build/package/Dockerfile .
+	@docker build -t yaoquan-eric-ye/pagerduty-slack-sync:${TAG} -f build/package/Dockerfile .
 
 docker-publish:
 	@docker login
