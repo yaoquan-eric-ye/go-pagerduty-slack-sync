@@ -115,7 +115,7 @@ func appendSchedule(schedules []Schedule, scheduleID, teamName string) []Schedul
 }
 
 func getPagerdutyScheduleLookahead() (time.Duration, error) {
-	result := time.Hour * 24 * 100
+	result := time.Hour * 24 * 1000
 
 	pdScheduleLookahead, ok := os.LookupEnv(pdScheduleLookaheadKey)
 	if !ok {
