@@ -46,6 +46,6 @@ jobs:
           context: .
           file: ./build/package/Dockerfile
           push: true
-          tags: kevholditch/pagerduty-slack-sync:${{steps.vars.outputs.tag}}, kevholditch/pagerduty-slack-sync:latest
+          tags: yaoquan-eric-ye/pagerduty-slack-sync:${{steps.vars.outputs.tag}}, yaoquan-eric-ye/pagerduty-slack-sync:latest
           platforms: linux/amd64,linux/arm64
 
